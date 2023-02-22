@@ -56,10 +56,6 @@ public class DiseaseService extends CrudService<Disease, Integer> {
         return repository.findByGenesIn(genes);
     }
 
-    public List<Disease> findByMutations(List<Mutation> mutations) {
-        return repository.findByMutationsIn(mutations);
-    }
-
     public List<Disease> findBySymptomsIn(List<Symptom> symptoms) {
         return repository.findBySymptomsIn(symptoms);
     }
@@ -77,24 +73,6 @@ public class DiseaseService extends CrudService<Disease, Integer> {
     public List<Disease> findDiseasesByMutation(Mutation mutation){return repository.findByMutations(mutation);}
 
     public List<Disease> searchByOmimID(int omimID){return repository.findByOmimID(omimID);}
-
-    public List<Disease> searchDiseases(
-            String diseaseName,
-            String diseaseSymbol,
-            String alternativeNames,
-            String inheritance,
-            List<Gene> genes,
-            List<Mutation> mutations,
-            List<Symptom> symptoms,
-            String genomicLocation,
-            String summary,
-            String classification,
-            String links,
-            String centers,
-            String supportGroups,
-            String diseasesReferences) {
-        return repository.searchDiseases(diseaseName, diseaseSymbol, alternativeNames, inheritance, genes, mutations, symptoms, genomicLocation, summary, classification, links, centers, supportGroups, diseasesReferences);
-    }
 
     public List<Disease> searchByInheritance(String inheritance){return repository.findByInheritance(inheritance);}
 
