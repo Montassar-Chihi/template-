@@ -19,8 +19,6 @@ public class Gene extends AbstractEntity {
     private String function;
     private String expression;
     private String transcrits;
-    @OneToMany(fetch = FetchType.LAZY)
-    private List<Mutation> mutations;
     @ManyToMany(fetch = FetchType.LAZY)
     private List<Disease> diseases;
 
@@ -106,14 +104,6 @@ public class Gene extends AbstractEntity {
 
     public void setTranscrits(String transcrits) {
         this.transcrits = transcrits;
-    }
-
-    public List<Mutation> getMutations() {
-        return mutations;
-    }
-
-    public void setMutations(List<Mutation> mutations) {
-        this.mutations = mutations;
     }
 
     public List<Disease> getDiseases() {
