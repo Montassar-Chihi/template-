@@ -20,8 +20,6 @@ public class User extends AbstractEntity {
     @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     private List<Gene> genes;
     @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
-    private List<Mutation> mutations;
-    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     private List<Disease> diseases;
 
     public User() {
@@ -33,14 +31,6 @@ public class User extends AbstractEntity {
 
     public void setGenes(List<Gene> genes) {
         this.genes = genes;
-    }
-
-    public List<Mutation> getMutations() {
-        return mutations;
-    }
-
-    public void setMutations(List<Mutation> mutations) {
-        this.mutations = mutations;
     }
 
     public List<Disease> getDiseases() {
