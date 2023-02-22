@@ -18,7 +18,6 @@ public interface DiseaseRepository extends JpaRepository<Disease, Integer> {
     List<Disease> findByOmimID(int omimID);
     List<Disease> findBySymptomsIn(List<Symptom> symptoms);
     List<Disease> findByGenesIn(List<Gene> genes);
-    List<Disease> findByMutationsIn(List<Mutation> mutations);
 
     @Query("SELECT DISTINCT inheritance FROM Disease")
     List<String> findDistinctInheritance();
@@ -67,8 +66,6 @@ public interface DiseaseRepository extends JpaRepository<Disease, Integer> {
     List<Disease> findByInheritance(String inheritance);
 
     List<Disease> findByGenes(Gene genes);
-
-    List<Disease> findByMutations(Mutation mutations);
 
     List<Disease> findByGenomicLocation(String genomicLocation);
 
