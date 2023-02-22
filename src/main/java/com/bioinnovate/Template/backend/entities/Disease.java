@@ -13,8 +13,6 @@ public class Disease extends AbstractEntity {
     private String inheritance;
     @ManyToMany(fetch = FetchType.LAZY)
     private List<Gene> genes;
-    @OneToMany(fetch = FetchType.LAZY)
-    private List<Mutation> mutations;
     @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     private List<Symptom> symptoms;
     private String genomicLocation;
@@ -34,14 +32,6 @@ public class Disease extends AbstractEntity {
 
     public void setSymptoms(List<Symptom> symptoms) {
         this.symptoms = symptoms;
-    }
-
-    public List<Mutation> getMutations() {
-        return mutations;
-    }
-
-    public void setMutations(List<Mutation> mutations) {
-        this.mutations = mutations;
     }
 
     public int getOmimID() {
