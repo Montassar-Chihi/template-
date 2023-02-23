@@ -1,0 +1,181 @@
+#home-page{
+padding:0;
+    background:transparent;
+    /*background-image: url(images/home.jpg);
+    background-repeat: no-repeat;
+        background-position-x: -10rem;
+    background-size: cover;*/
+}
+#home-genes-image {
+    border-radius: 25px;
+    margin: 1rem auto;
+    max-width: 300px;
+    width: 100%;
+}
+#home-signup{
+    border-radius: 1rem;
+    box-shadow: grey 0px 10px 10px;
+    margin: 10px auto;
+    color: white;
+    background: var(--general-color);
+    width: 175px;
+}
+#home-description-layout{
+    margin:0;
+    padding:2rem 10%;
+    width:100%;
+    background:transparent;
+}
+#home-description-layout vaadin-vertical-layout{
+    align-self: center;
+    background:#ffffffa6;
+    padding:2rem;
+    border-radius:2rem;
+}
+.left-band{
+    align-self: center;
+    width: 100%;
+    min-height: 20px
+}
+.right-band{
+    align-self: center;
+    width: 100%;
+    min-height: 20px
+}
+.home-big-titles{
+    align-self: center;
+    margin: 1rem 0px;
+    color: rgb(203, 52, 52);
+    width: 100%;
+    font-size: 3.2rem;
+    font-family: "Brush Script MT", cursive;
+    text-align: center;
+    text-shadow: 10px 10px 12px grey;
+}
+.home-titles-layout{
+    width:100%;
+    background:transparent;
+}
+#home-value{
+    border-radius: 50%;
+    border: 5px double rgb(203, 52, 52);
+    padding: 2.5rem;
+    box-shadow: rgb(108 104 104) 4px 4px 15px 0px inset, rgb(0 0 0 / 0%) 5px 5px 15px 5px;
+    margin: auto 3rem;
+    background: rgb(241, 241, 241);
+    display: inline-block;
+    width:10%;
+    max-width: 100px;
+}
+#home-number{
+        align-self: center;
+        color: rgb(203, 52, 52);
+        font-weight: bold;
+        font-size: 2rem;
+        font-family: "Open sans";
+        text-align: center;
+}
+#home-description-of-value{
+    align-self: center;
+    margin: 10px 0px;
+    display: block;
+    font-size: 1rem;
+    font-family: Merriweather;
+    text-align: justify;
+    background:#ffffffa6;
+        padding:1rem;
+        border-radius:2rem;
+    width:100%;
+}
+#home-percentage{
+    margin: auto;
+        padding: 2rem 3rem;
+        width: 100%;
+        max-width: 115rem;
+        background: transparent;
+}
+#stats-layout{
+     width:100%;
+     background:transparent;
+     margin-top:-2rem;
+     padding:0;
+ }
+ #stats-small-layout {
+          width: 80% !important;
+          background: transparent;
+          padding: 0 1rem;
+          margin: 0 10%;
+          margin-top: 3.5rem;
+          align-items: center;
+      }
+#diseases-graph{
+    max-height: 500px;
+    margin: 1rem auto;
+    display: block;
+    width: 80%;
+    max-width: 80rem;
+    border-radius:2rem;
+}
+#diseases-graph-source{
+    align-self: center;
+    color: black;
+    display: block;
+}
+#stats-paragraph-layout{
+        width: 44% !important;
+        max-width: 40rem;
+        margin: 1rem;
+        background: white;
+        border-radius: 1rem;
+        color: white;
+ }
+@media screen and (max-width: 1376px) and (min-width:1350px){
+    #stats-paragraph-layout{
+        position: relative;
+            width: 44% !important;
+            max-width: 40rem;
+            margin: 1rem;
+            background: white;
+            border-radius: 167px 40% 48% 5rem;
+            color: white;
+            box-shadow: inset -5px 5px 30px 2px rgb(203 52 52);
+     }
+    #stats-small-layout{
+         width:100% !important;
+         background:transparent;
+         padding:0 1rem;
+         margin : 0 !important;
+         margin-top:3.5rem !important;
+         align-items: center;
+     }
+     #diseases-graph-description{
+         text-align: left;
+     }
+}
+ #diseases-title{
+     align-self: center;
+     color: rgb(203, 52, 52);
+     text-align: center;
+     width: 16rem;
+     margin-bottom: 1.5rem;
+     text-shadow: 10px 10px 10px rgb(203, 52, 52);
+ }
+ #diseases-graph-description{
+    align-self: center;
+    text-align: justify;
+     margin: 10px 0px;
+     margin-bottom: 2rem;
+     margin-right: 21px;
+     color: black;
+     display: block;
+     width: 92%;
+     font-size: 1rem;
+     font-family: Merriweather;
+ }
+#diseases-genetic-articles-layout{
+    width:100%;
+    background:transparent;
+}
+#diseases-genetic-articles-layout vaadin-vertical-layout{
+    background:transparent;
+}
